@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gezgin AI – Veri Silme</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, sans-serif;
+      background: #f7f8fa;
+      color: #1a1a2e;
+      line-height: 1.7;
+    }
+    header {
+      background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+      color: #fff;
+      padding: 48px 24px 40px;
+      text-align: center;
+    }
+    header .logo { font-size: 2rem; font-weight: 700; letter-spacing: -0.5px; }
+    header .logo span { color: #e94560; }
+    header p { margin-top: 8px; font-size: 0.95rem; opacity: 0.7; }
+    .container { max-width: 780px; margin: 0 auto; padding: 48px 24px 80px; }
+    .card {
+      background: #fff;
+      border-radius: 16px;
+      padding: 40px;
+      box-shadow: 0 2px 20px rgba(0,0,0,0.06);
+      margin-bottom: 24px;
+    }
+    h1 { font-size: 1.6rem; font-weight: 700; margin-bottom: 6px; }
+    .date { font-size: 0.85rem; color: #888; margin-bottom: 32px; }
+    h2 {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: #e94560;
+      margin: 28px 0 10px;
+      padding-left: 12px;
+      border-left: 3px solid #e94560;
+    }
+    p { margin-bottom: 14px; font-size: 0.95rem; color: #444; }
+    ul { padding-left: 20px; margin-bottom: 14px; }
+    li { font-size: 0.95rem; color: #444; margin-bottom: 6px; }
+    a { color: #e94560; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 16px 0;
+      font-size: 0.9rem;
+    }
+    th {
+      background: #1a1a2e;
+      color: #fff;
+      padding: 10px 14px;
+      text-align: left;
+      font-weight: 600;
+    }
+    td {
+      padding: 10px 14px;
+      border-bottom: 1px solid #f0f0f0;
+      color: #444;
+    }
+    tr:last-child td { border-bottom: none; }
+    tr:nth-child(even) td { background: #f9f9f9; }
+    .steps {
+      counter-reset: step;
+      padding-left: 0;
+      list-style: none;
+    }
+    .steps li {
+      counter-increment: step;
+      display: flex;
+      align-items: flex-start;
+      gap: 16px;
+      margin-bottom: 16px;
+    }
+    .steps li::before {
+      content: counter(step);
+      min-width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      background: #e94560;
+      color: #fff;
+      font-weight: 700;
+      font-size: 0.85rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+    .contact-box {
+      background: #f7f8fa;
+      border-radius: 12px;
+      padding: 20px 24px;
+      margin-top: 32px;
+      font-size: 0.9rem;
+      color: #555;
+    }
+    .contact-box strong { color: #1a1a2e; }
+    footer {
+      text-align: center;
+      padding: 24px;
+      font-size: 0.8rem;
+      color: #aaa;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo">Gezgin<span>AI</span></div>
+  <p>Akıllı Seyahat Planlayıcı</p>
+</header>
+
+<div class="container">
+  <div class="card">
+    <h1>Veri Silme Talebi</h1>
+    <div class="date">Son güncelleme: 2 Haziran 2026</div>
+
+    <p>Gezgin AI olarak kullanıcılarımızın kişisel verileri üzerinde tam kontrol sahibi olmasına önem veriyoruz. Tüm verilerinizin ya da belirli verilerinizin silinmesini talep etme hakkına sahipsiniz.</p>
+
+    <h2>Hangi Verileri Silebilirsiniz</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Veri Türü</th>
+          <th>Silme Yöntemi</th>
+          <th>Süre</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Seyahat planları</td>
+          <td>Uygulama içinden</td>
+          <td>Anında</td>
+        </tr>
+        <tr>
+          <td>Profil bilgileri</td>
+          <td>Profil ayarları</td>
+          <td>Anında</td>
+        </tr>
+        <tr>
+          <td>Push bildirim token</td>
+          <td>Otomatik (hesap silinince)</td>
+          <td>30 gün</td>
+        </tr>
+        <tr>
+          <td>Tüm hesap ve veriler</td>
+          <td>Hesap silme / e-posta talebi</td>
+          <td>30 gün</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>E-posta ile Veri Silme Talebi</h2>
+    <p>Belirli verilerinizin silinmesini talep etmek için:</p>
+    <ol class="steps">
+      <li><a href="mailto:gezginai@digiprocon.com">gezginai@digiprocon.com</a> adresine e-posta gönderin.</li>
+      <li>Konu satırına <strong>"Veri Silme Talebi"</strong> yazın.</li>
+      <li>Hesabınıza kayıtlı e-posta adresinizi ve silmek istediğiniz veri türünü belirtin.</li>
+      <li>Talebiniz <strong>7 iş günü</strong> içinde işleme alınır, size onay e-postası gönderilir.</li>
+    </ol>
+
+    <h2>Tam Hesap Silme</h2>
+    <p>Tüm verilerinizin silinmesini istiyorsanız hesabınızı tamamen silebilirsiniz. Detaylı bilgi için <a href="account-deletion.html">Hesap Silme</a> sayfasını ziyaret edin.</p>
+
+    <h2>Veri Saklama ve Silme Süreci</h2>
+    <ul>
+      <li>Silme talebi alındıktan sonra veriler <strong>30 gün</strong> içinde sistemlerimizden kalıcı olarak kaldırılır.</li>
+      <li>Yedekleme sistemlerinden tam temizlik en fazla <strong>60 gün</strong> sürebilir.</li>
+      <li>Yasal zorunluluklar gerektirmedikçe hiçbir veri bu sürelerden fazla tutulmaz.</li>
+    </ul>
+
+    <div class="contact-box">
+      <strong>Veri Koruma İletişim</strong><br />
+      Talepleriniz ve sorularınız için:<br />
+      <a href="mailto:gezginai@digiprocon.com">gezginai@digiprocon.com</a>
+    </div>
+  </div>
+</div>
+
+<footer>© 2026 Gezgin AI · Tüm hakları saklıdır.</footer>
+
+</body>
+</html>
